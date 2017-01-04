@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+{% trans_default_domain 'FOSUserBundle' %}
+{% block body %}
+    <div id="all" style="margin-left: 450px">
+
+        <div id="content">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="box">
+                        <h1>Inscription</h1>
+
+<form  {{ form_enctype(form) }} method="POST" >
+    <div class="form-group">
+       {{ form_widget(form) }}
+        </div>
+
+    <div>
+        <input type="submit" class="btn btn-primary" value="{{ 'registration.submit'|trans }}" />
+    </div>
+</form>
+</div>
+</div>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}
